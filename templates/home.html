@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Greengrow agri AI</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #a9f3f5;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .login { background-color: green; color: white; }
+        .signup { background-color: brown; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" width="200">
+        <h1>Welcome to Greengrow agri AI</h1>
+        <p><i>"Cultivating wisdom, nurturing growth—your digital partner in sustainable farming."</i></p>
+        <a href="{{ url_for('login') }}" class="button login">Login</a>
+        <a href="{{ url_for('signup') }}" class="button signup">Sign Up</a>
+    </div>
+</body>
+</html>
